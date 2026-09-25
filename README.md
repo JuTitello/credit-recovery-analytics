@@ -75,7 +75,6 @@ Volume simulado: ~50–100 mil contratos, gerados de forma sintética com Python
 
 > Este projeto está em construção e evoluindo publicamente — os commits refletem o passo a passo do desenvolvimento.
 
-## 👩‍💻 Autora
 
 **Júlia Titello**
 [LinkedIn](https://linkedin.com/in/júlia-titello) · [GitHub](https://github.com/JuTitello)
