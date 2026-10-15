@@ -66,8 +66,8 @@ Volume simulado: ~50–100 mil contratos, gerados de forma sintética com Python
 ## 🚧 Status do projeto
 
 - [x] Definição do cenário de negócio
-- [ ] Geração da base sintética de dados
-- [ ] Validação e qualidade dos dados
+- [x] Geração da base sintética de dados
+- [x] Validação e qualidade dos dados
 - [ ] Modelagem no PostgreSQL
 - [ ] Análises SQL de carteira e recuperação
 - [ ] Dashboard executivo no Power BI
