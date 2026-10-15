@@ -28,21 +28,21 @@ Dados brutos (CSV)
 
 ```
 credit-recovery-analytics/
-├── data/
-│   ├── raw/
-│   └── processed/
 ├── python/
-│   ├── generate_data.py
-│   └── data_quality.py
+│   ├── db.py                  # conexão com o PostgreSQL (variáveis do .env)
+│   ├── gerar_clientes.py      # geração de clientes sintéticos
+│   ├── gerar_assessorias.py   # geração de assessorias de cobrança
+│   ├── gerar_contratos.py     # geração de contratos (parcelas, vencimento, status)
+│   ├── gerar_pagamentos.py    # pagamentos coerentes com o status do contrato
+│   ├── gerar_interacoes.py    # interações de cobrança após o vencimento
+│   └── main.py                # orquestra a geração e a carga no banco
 ├── sql/
-│   ├── 01_schema.sql
-│   ├── 02_transformations.sql
-│   └── 03_analysis.sql
-├── powerbi/
-│   └── dashboard.pbix
-├── docs/
-│   ├── data_dictionary.md
-│   └── business_questions.md
+│   ├── 01_schema.sql          # tabelas, constraints e view de faixa de atraso
+│   └── 03_analysis.sql        # consultas de análise (em desenvolvimento)
+├── powerbi/                   # dashboard (em desenvolvimento)
+├── docs/                      # dicionário de dados e perguntas de negócio (em desenvolvimento)
+├── .env.example               # modelo das variáveis de ambiente
+├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
